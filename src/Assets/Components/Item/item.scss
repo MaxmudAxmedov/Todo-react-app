@@ -1,0 +1,25 @@
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(254, 254, 254);   
+    box-shadow: 2px 5px 6px rgb(64, 64, 64);
+    border-radius: 6px;
+    margin: 12px 0;
+    transition: all 0.3s ease-in-out;
+}
+.item:hover{
+    transform: rotate(1deg);
+}
+.item-btn{
+    margin-left: auto;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(168, 3, 3);
+    color: #fff;
+    box-shadow: 2px 5px 6px rgb(122, 0, 0);
+}
+.completed{
+    text-decoration: line-through;
+}

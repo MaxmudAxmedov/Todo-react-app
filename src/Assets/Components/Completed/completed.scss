@@ -1,0 +1,22 @@
+.completed-list{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ccc;
+    box-shadow: 2px 5px 6px rgb(64, 64, 64);
+    border-radius: 12px;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+}
+.completed-item{
+    // background-color: #fff;
+    border: 1px solid #ccc;
+    background-color: teal;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,26 @@
+.todo{
+    height: 90vh;
+    position: relative;
+    
+}
+.list{
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow-y: auto;
+}
+.list-input{
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    box-shadow: 2px 5px 6px rgb(64, 64, 64);
+}
+.list-input:focus{
+    box-shadow: 2px 8px 6px rgb(64, 64, 64);
+}
