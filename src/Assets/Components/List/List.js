@@ -9,7 +9,7 @@ import "./list.scss";
 
 function List () {
 
-    const [array, setArray] = useState(JSON.parse(window.localStorage.getItem("array") || []));
+    const [array, setArray] = useState(JSON.parse(window.localStorage.getItem("array")) || []);
     const [arrayTrue, setTrue] = useState(JSON.parse(window.localStorage.getItem("arrayTrue"))|| []);
     const [arrayFalse, setFalse] = useState(JSON.parse(window.localStorage.getItem("arrayFalse")) || []);
    
