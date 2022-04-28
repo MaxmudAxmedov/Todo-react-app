@@ -10,8 +10,8 @@ import "./list.scss";
 function List () {
 
     const [array, setArray] = useState(JSON.parse(window.localStorage.getItem("array") || []));
-    const [arrayTrue, setTrue] = useState(JSON.parse(window.localStorage.getItem("arrayTrue") || []));
-    const [arrayFalse, setFalse] = useState(JSON.parse(window.localStorage.getItem("arrayFalse") || []));
+    const [arrayTrue, setTrue] = useState(JSON.parse(window.localStorage.getItem("arrayTrue"))|| []);
+    const [arrayFalse, setFalse] = useState(JSON.parse(window.localStorage.getItem("arrayFalse")) || []);
    
     function renderFunction (evt) {
         
@@ -53,11 +53,8 @@ function List () {
       
         window.localStorage.setItem("arrayTrue", JSON.stringify([...arrayTrue, array ]));
         window.localStorage.setItem("arrayFalse", JSON.stringify([...arrayFalse, array ]));
-
         
         setArray([...array]);
-     
-        
     }
 
     function deleteItem (evt) {
